@@ -1,6 +1,11 @@
 import AnswersItem from "./AnswersItem";
+import PropTypes from "prop-types";
 
 export default function AnswersList(props) {
+  AnswersList.propTypes = {
+    answersList: PropTypes.array.isRequired,
+  };
+
   console.log("Inside AnswersList: ", props);
 
   const { answersList } = props;
